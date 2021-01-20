@@ -19,11 +19,10 @@ namespace firstConsole
 
             double lengthAC = A - C;
             double lengthBC = B * (-1) + C;
-            double lengths = lengthAC + lengthBC;
 
             Console.WriteLine($"Length of AC = {Math.Round(lengthAC, 2)}");
             Console.WriteLine($"Length of BC = {Math.Round(lengthBC, 2)}");
-            Console.WriteLine($"Sum of lengths of AC and BC = {Math.Round(lengths, 2)}");
+            Console.WriteLine($"Sum of lengths of AC and BC = {Math.Round(lengthAC + lengthBC, 2)}");
 
             double x1 = - 6.2;
             double y1 = 5.2;
@@ -39,7 +38,7 @@ namespace firstConsole
             Console.WriteLine($"Minutes passed = {N / 60}");
 
             int K = 202;
-            Console.WriteLine($"Day of the week = {202 % 7}");
+            Console.WriteLine($"Day of the week = {K % 7}");
         }
     }
 }
