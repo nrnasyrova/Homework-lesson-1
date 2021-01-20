@@ -14,9 +14,8 @@ namespace firstConsole
             Console.WriteLine($"Geometric Mean = {Math.Round(Math.Sqrt(a * b), 2)}");
             
             double A = 1.4;
-            double B = - 5.5;
+            double B = -5.5;
             double C = 0.6;
-
             double lengthAC = A - C;
             double lengthBC = B * (-1) + C;
 
@@ -24,20 +23,24 @@ namespace firstConsole
             Console.WriteLine($"Length of BC = {Math.Round(lengthBC, 2)}");
             Console.WriteLine($"Sum of lengths of AC and BC = {Math.Round(lengthAC + lengthBC, 2)}");
 
-            double x1 = - 6.2;
+            double x1 = -6.2;
             double y1 = 5.2;
             double x2 = 2.1;
             double y2 = 9.8;
+            double distance = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
 
-            Console.WriteLine($"Distance = {Math.Round(Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2)), 2)}");
+            Console.WriteLine($"Distance = {Math.Round(distance, 3)}");
 
             int number = 41;
+
             Console.WriteLine($"Reverse number = {((number % 10 ) * 10) + number / 10}");
 
             int N = 10985;
+
             Console.WriteLine($"Minutes passed = {N / 60}");
 
             int K = 202;
+            
             Console.WriteLine($"Day of the week = {K % 7}");
         }
     }
